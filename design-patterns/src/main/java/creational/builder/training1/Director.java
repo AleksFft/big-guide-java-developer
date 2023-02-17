@@ -14,4 +14,8 @@ public class Director {
         builder.windowsCount(3);
         builder.location("on the lake");
     }
+
+    public void buildReception(Builder builder) {
+        builder.reception("nice woman");
+    }
 }

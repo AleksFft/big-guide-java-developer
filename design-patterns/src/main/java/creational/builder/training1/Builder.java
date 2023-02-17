@@ -5,4 +5,6 @@ public interface Builder {
     void wallMaterial(WallMaterial material);
     void windowsCount(int windows);
     void floorsCount(int floors);
+    void reception(String reception);
+    Builder getResult();
 }

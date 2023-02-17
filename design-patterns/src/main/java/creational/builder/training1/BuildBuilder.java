@@ -14,9 +14,11 @@ public class BuildBuilder implements Builder {
     private WallMaterial wallMaterial;
     private int windowsCount;
     private int floorsCount;
+    private String reception;
 
+    @Override
     public Builder getResult() {
-        return new BuildBuilder(location, wallMaterial, windowsCount, floorsCount);
+        return new BuildBuilder(location, wallMaterial, windowsCount, floorsCount, reception);
     }
 
     @Override
@@ -37,5 +39,10 @@ public class BuildBuilder implements Builder {
     @Override
     public void floorsCount(int floors) {
         this.floorsCount = floors;
+    }
+
+    @Override
+    public void reception(String reception) {
+        this.reception = reception;
     }
 }

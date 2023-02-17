@@ -22,6 +22,7 @@ public class PassportBuilder implements Builder {
         guarantyPeriod(wallMaterial);
     }
 
+    @Override
     public PassportBuilder getResult() {
         return new PassportBuilder(location, wallMaterial, windowsCount, floorsCount);
     }
@@ -56,6 +57,11 @@ public class PassportBuilder implements Builder {
     @Override
     public void floorsCount(int floors) {
         this.floorsCount = floors;
+    }
+
+    @Override
+    public void reception(String reception) {
+
     }
 
     @Override
